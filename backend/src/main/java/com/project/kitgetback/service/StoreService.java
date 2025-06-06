@@ -19,4 +19,8 @@ public class StoreService {
     public List<Product> getProductsBySchoolAndClass(String schoolCode, String className) {
         return productRepository.findProductsBySchoolAndClass(schoolCode, className);
     }
+
+    public ProductEntity saveProduct(ProductEntity product) {
+        return productRepository.save(product);
+    }
 }
