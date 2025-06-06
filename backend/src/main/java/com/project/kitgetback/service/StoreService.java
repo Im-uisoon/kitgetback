@@ -1,6 +1,7 @@
 package com.project.kitgetback.service;
 
 import com.project.kitgetback.DTO.Product;
+import com.project.kitgetback.entity.ProductEntity;
 import com.project.kitgetback.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
