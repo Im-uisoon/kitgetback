@@ -17,9 +17,11 @@ import java.util.List;
 @CrossOrigin(origins = "https://im-uisoon.github.io")
 public class StoreController {
     private final StoreService storeService;
+    private final MembershipRepository membershipRepository;
 
-    public StoreController(StoreService storeService) {
+    public StoreController(StoreService storeService, MembershipRepository membershipRepository) {
         this.storeService = storeService;
+        this.membershipRepository = membershipRepository;
     }
 
     // 해당 학교 강의 조회
